@@ -37,9 +37,7 @@ function MemeForm({ id, url, memes, name, handleClick }) {
             name: name,
             url: data.data.url,
           }),
-        })
-          .then((r) => r.json())
-          .then((data) => console.log(data))
+        }).then((r) => r.json())
       })
   }
 

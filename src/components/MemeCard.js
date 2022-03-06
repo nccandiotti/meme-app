@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Popup from "./Popup"
 
-function MemeCard({ id, hello, name, url, addMemesToState, memes }) {
+function MemeCard({ id, name, url, addMemesToState, memes }) {
   const [popUp, setPopUp] = useState(false)
 
   function handleClick() {

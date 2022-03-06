@@ -6,6 +6,6 @@ export const Container = styled.div`
     black;
 
   background-size: 100%;
-  /* background-repeat: no-repeat; */
+
   margin-bottom: 20px;
 `

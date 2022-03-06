@@ -12,7 +12,6 @@ import { MemeGrid } from "./Styles/MemeContainer.styled"
 
 import { Container } from "./Styles/App.styled"
 import hero2 from "./images/hero2.png"
-import brickwall from "./images/brickwall.jpg"
 
 function App() {
   const [memes, setMemes] = useState([])
@@ -36,8 +35,6 @@ function App() {
   return (
     <Container>
       <>
-        {/* <MemeForm memes={memes} /> */}
-
         <BrowserRouter>
           <nav>
             <StyledHeader>
@@ -59,7 +56,6 @@ function App() {
                   My Memes
                 </NavLink>
               </h2>
-              {/* <img src={youcandoit} alt="youcandoit" /> */}
             </StyledHeader>
           </nav>
           <Switch>
@@ -77,7 +73,6 @@ function App() {
                   addMemesToState={addMemesToState}
                 />
               </MemeGrid>
-              {/* <Home /> */}
             </Route>
             <Route path="/directions">
               <Directions />

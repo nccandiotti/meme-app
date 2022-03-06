@@ -38,7 +38,6 @@ export default ({ id, url, name, handleClick, addMemesToState, memes }) => (
               >
                 &times;
               </button>
-              {/* <div className="header"> Modal Title </div> */}
               <div className="content">
                 {" "}
                 {/* <StyledForm> */}
@@ -50,7 +49,6 @@ export default ({ id, url, name, handleClick, addMemesToState, memes }) => (
                   memes={memes}
                   id={id}
                 />
-                {/* </StyledForm> */}
               </div>
             </div>
           )}
