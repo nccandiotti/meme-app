@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { StyledForm } from "./Styles/Popup.styled"
 
-function MemeForm({ id, url, memes, name, handleClick }) {
+function MemeForm({ id, url, name, handleClick }) {
   const [topText, setTopText] = useState("")
   const [bottomText, setBottomText] = useState("")
 

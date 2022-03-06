@@ -4,7 +4,7 @@ import MemeForm from "./MemeForm"
 import { StyledPopup } from "./Styles/Popup.styled"
 import { Container } from "./Styles/App.styled"
 
-export default ({ id, url, name, handleClick, addMemesToState, memes }) => (
+export default ({ id, url, name, handleClick, memes }) => (
   <Container>
     <StyledPopup>
       <>
@@ -45,7 +45,6 @@ export default ({ id, url, name, handleClick, addMemesToState, memes }) => (
                   name={name}
                   url={url}
                   handleClick={handleClick}
-                  addMemesToState={addMemesToState}
                   memes={memes}
                   id={id}
                 />

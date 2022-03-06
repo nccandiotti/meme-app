@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 import Popup from "./Popup"
 
 function MemeCard({ id, name, url, addMemesToState, memes }) {
@@ -18,7 +18,6 @@ function MemeCard({ id, name, url, addMemesToState, memes }) {
           name={name}
           url={url}
           handleClick={handleClick}
-          addMemesToState={addMemesToState}
           memes={memes}
           id={id}
         />

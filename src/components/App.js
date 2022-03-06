@@ -12,6 +12,7 @@ import { MemeGrid } from "./Styles/MemeContainer.styled"
 
 import { Container } from "./Styles/App.styled"
 import hero2 from "./images/hero2.png"
+import { MemeContext } from "./MemeContext"
 
 function App() {
   const [memes, setMemes] = useState([])
@@ -67,12 +68,13 @@ function App() {
             </Route>
             <Route exact path="/">
               <Search setSearchTerm={setSearchTerm} searchTerm={searchTerm} />
-              <MemeGrid>
-                <MemeContainer
-                  memes={filteredMemeTitles}
-                  addMemesToState={addMemesToState}
-                />
-              </MemeGrid>
+              <MemeContext.Provider
+                value={{ filteredMemeTitles, addMemesToState }}
+              >
+                <MemeGrid>
+                  <MemeContainer />
+                </MemeGrid>
+              </MemeContext.Provider>
             </Route>
             <Route path="/directions">
               <Directions />

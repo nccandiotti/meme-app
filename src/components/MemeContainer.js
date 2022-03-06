@@ -1,9 +1,11 @@
-import React from "react";
-import MemeCard from "./MemeCard";
-import { MyMemeGrid } from "./Styles/MyMemeContainer.styled";
+import React, { useContext } from "react"
+import MemeCard from "./MemeCard"
+import { MyMemeGrid } from "./Styles/MyMemeContainer.styled"
+import { MemeContext } from "./MemeContext"
 
-function MemeContainer({ memes, addMemesToState }) {
-  const createMemeCards = memes.map((meme) => (
+function MemeContainer() {
+  const { filteredMemeTitles } = useContext(MemeContext)
+  const createMemeCards = filteredMemeTitles.map((meme) => (
     <MemeCard
       key={meme.id}
       id={meme.id}
@@ -11,15 +13,13 @@ function MemeContainer({ memes, addMemesToState }) {
       url={meme.url}
       width={meme.width}
       height={meme.height}
-      addMemestoState={addMemesToState}
-      memes={memes}
     />
-  ));
+  ))
   return (
     <MyMemeGrid>
       <>{createMemeCards}</>
     </MyMemeGrid>
-  );
+  )
 }
 
-export default MemeContainer;
+export default MemeContainer
