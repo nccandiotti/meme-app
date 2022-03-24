@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react"
 import MyMemesContainer from "./MyMemesContainer"
 
-function MyMemes({ setMyMemesArray }) {
+function MyMemes() {
+  // const { setMyMemesArray } = useContext()
   const [myMemes, setMyMemes] = useState([])
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import { Route, Switch, NavLink, BrowserRouter } from "react-router-dom"
 import Search from "./Search"
 import MemeContainer from "./MemeContainer"
@@ -13,6 +13,7 @@ import { MemeGrid } from "./Styles/MemeContainer.styled"
 import { Container } from "./Styles/App.styled"
 import hero2 from "./images/hero2.png"
 import { MemeContext } from "./MemeContext"
+// import { MyMemesContext } from "./MyMemesContext"
 
 function App() {
   const [memes, setMemes] = useState([])
@@ -61,10 +62,12 @@ function App() {
           </nav>
           <Switch>
             <Route path="/mymemes">
+              {/* <MyMemesContext value={{ myMemesArray, setMyMemesArray }}> */}
               <MyMemes
                 myMemesArray={myMemesArray}
                 setMyMemesArray={setMyMemesArray}
               />
+              {/* </MyMemesContext> */}
             </Route>
             <Route exact path="/">
               <Search setSearchTerm={setSearchTerm} searchTerm={searchTerm} />
