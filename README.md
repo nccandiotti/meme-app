@@ -1,5 +1,4 @@
-# Pair Programming Project, Queen of Memes (a meme generating app) created by Kimberly Hayes and Nicole Candiotti as a Flatiron School Phase 2 project
-
+# Queen of Memes (a meme generating app) 
 ## Demonstrated Skills
 - pair programming
 - Create React App
