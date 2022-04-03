@@ -1,19 +1,11 @@
 # Queen of Memes (a meme generating app) 
 ## Demonstrated Skills
 - pair programming
-- Create React App
 - Wire framing (see hierarchy.drawio)
-- JSX and fragments
-- React functional components - named and default imports/exports
-- React hooks (useEffect and useState)
-- React Router DOM, BrowserRouter, Switch, Route, NavLink
-- Controlled inputs - form and dynamic search bar
+- React functional components
 - Full CRUD and fetch requests to third party APIs
 - JSON
 - DOM manipulation
-- Conditional rendering
-- Array iteration
-- Passing Props, call back functions, and inverse dataflow
 - React Popup Component (to create a modal) : https://github.com/yjose/reactjs-popup
 
 CSS
